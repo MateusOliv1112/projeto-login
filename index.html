@@ -4,6 +4,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Projeto Login</title>
+    
+   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=key_off" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=mail" />
+    
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=vpn_key" />
+    
     <link rel="stylesheet" href="estilos/style.css">
     <link rel="stylesheet" href="estilos/media.css">
 </head>
@@ -17,7 +23,22 @@
                 <h1>Login</h1>
                 <p>Seja bem vindo (a), Faça login para poder acessar sua conta e poder fazer as configurações no seu ambiente</p>
                 <form action="login.php" method="post">
-                    
+                    <div class="campo">
+                        <span class="material-symbols-outlined">mail</span>
+                        <input type="email" name="login" id="ilogin" placeholder="Seu email" autocomplete="email" required maxlength="40">
+                        <label for="ilogin">Login </label>
+                    </div>
+                    <div class="campo">
+                        <span class="material-symbols-outlined">
+                        vpn_key
+                        </span>
+                        <input type="password" name="Senha" id="isenha" placeholder="Seua senha" autocomplete="current-password" required minlength="8">
+                        <label for="isenha">Senha</label>
+                    </div>
+                    <input type="submit" value="Entrar">
+                    <a href="esqueci.html" class="botao">Esqueci a senha </a>
+
+
                 </form>
             </div>
         </section>
